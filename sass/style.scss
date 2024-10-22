@@ -1,0 +1,145 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    max-width: auto;
+    margin: 0;
+    padding:0;
+    border: red so
+}
+
+#navbar__foto{
+height: 50px;
+width: 50px;
+
+
+
+}
+
+#nav__iconos{
+
+
+align-items: flex-end;
+
+}
+
+#nav__contenedor{
+
+    max-width: 80%;
+    
+    
+    }
+
+.overlay {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        align-items: center;
+}
+
+.main { 
+    display: flex;
+    max-width: 100%;
+    height: 100vh;
+    gap: 15vh;
+    background-image: url("../images/hero-image.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+
+.main__caja1{
+
+    max-width: 100%;
+    text-align: center ;
+    justify-items: center;
+    align-items: center;
+    
+    }
+
+.main__caja2{
+
+max-width: 50%;
+text-align: center ;
+justify-items: center;
+align-items: center;
+
+
+
+
+}
+@media (max-width:768px){ /*estilos moviles */
+
+    .main { 
+        display: flex;
+        max-width: 100%;
+        height: auto;
+        gap: 15vh;
+        background-image: url("images/hero-image.png");
+        background-size: cover;
+        background-attachment: fixed;
+        align-items: center;
+        
+        
+        
+    }
+
+    .main__caja1{
+
+        max-width: 60%;
+        height: auto;
+        text-align: center ;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        
+        }
+
+        .main__caja2{
+
+            max-width: 81%;
+            height:50vh;
+            text-align: center ;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            
+            
+            
+            }
+
+
+            }
+
+    
+
+#footer {
+    background-color: black;
+
+    flex-direction: column; /* Cambiado para mejorar la disposición en pantallas pequeñas */
+    align-items: center; /* Centrar elementos en el footer */
+    justify-content: center;
+    height: auto; /* Cambiado a auto para mejor flexibilidad */
+}
+
+/* Estilos para redes sociales en el footer */
+#redes {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 20px; /* Espacio ajustado */
+}
+
+/* Imagen en el footer */
+#imagen-footer {
+    max-height: 40px; /* Ajusta el tamaño del logo */
+}
+
+/* Contenedor para teléfono y ubicación en el footer */
+#telefono, #ubicacion {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 20px; /* Espacio ajustado */
+}
