@@ -1,9 +1,11 @@
+@charset "UTF-8";
 * {
   list-style: none;
   text-decoration: none;
   max-width: auto;
   margin: 0;
   padding: 0;
+  border: red so;
 }
 
 #navbar__foto {
@@ -55,6 +57,27 @@
   text-align: center;
   justify-items: center;
   align-items: center;
+}
+
+/* Estilos para redes sociales en el footer */
+#redes {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 20px; /* Espacio ajustado */
+}
+
+/* Imagen en el footer */
+#imagen-footer {
+  max-height: 40px; /* Ajusta el tamaño del logo */
+}
+
+/* Contenedor para teléfono y ubicación en el footer */
+#telefono, #ubicacion {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 20px; /* Espacio ajustado */
 }
 
 @media (max-width: 768px) {
@@ -165,5 +188,6 @@
     margin-top: 10px;
   }
 }
+/* Estilos para redes sociales en el footer */
 
 /*# sourceMappingURL=style.css.map */
