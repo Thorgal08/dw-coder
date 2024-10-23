@@ -4,7 +4,7 @@
     max-width: auto;
     margin: 0;
     padding: 0;
-    border: red so;
+    border: 1px red solid;
 }
 
 #navbar__foto {
@@ -28,7 +28,7 @@
     align-items: center;
 }
 
-.main {
+.main {                        /*main para index*/
     display: flex;
     max-width: 100%;
     height: 100vh;
@@ -39,26 +39,26 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-#draconet-logo-texto {
+#draconet-logo-texto { /*estilos para el texto*/
     font-size: 60px;
     margin-top: 80px;
 }
 
-.main__caja1 {
+.main__caja1 {  /*caja de relleno para el hero*/
     max-width: 100%;
     text-align: center;
     justify-items: center;
     align-items: center;
 }
 
-.main__caja2 {
+.main__caja2 { /*segtunda caja para el hero */
     max-width: 50%;
     text-align: center;
     justify-items: center;
     align-items: center;
 }
 
-#footer {
+#footer {           /*elementos en el footer*/
     background-color: black;
     flex-direction: column; /* Cambiado para mejorar la disposición en pantallas pequeñas */
     align-items: center; /* Centrar elementos en el footer */
@@ -69,18 +69,18 @@
 @media (max-width: 768px) {
     /* estilos moviles */
 
-    .main {
+    .main {   /*main para index para moviles*/
         display: flex;
         max-width: 100%;
         height: 150vh;
         gap: 15vh;
-        background-image: url("/images/hero-image.png");
+        background-image: url("./images/hero-image.png");
         background-size: cover;
         background-attachment: fixed;
         align-items: center;
     }
 
-    .main__caja1 {
+    .main__caja1 {  
         max-width: 60%;
         height: auto;
         text-align: center;
@@ -106,21 +106,19 @@
 
 
     .main__contactocaja1 {
-        max-width: 60%;
-        height: auto;
+        max-width: 100%;
         text-align: center;
         justify-items: center;
         align-items: center;
-        justify-content: center;
+        font-size: 100px;
     }
-
+    
     .main__contactocaja2 {
-        max-width: 81%;
-        height: 40vh;
+        max-width: 50%;
         text-align: center;
         justify-items: center;
         align-items: center;
-        align-content: center;
+        margin-top: 10px;
     }
 
     #texto-hero-contacto {
@@ -152,14 +150,14 @@
 }
 
 
-#telefono, #ubicacion {
+#telefono, #ubicacion { /*diseño footer*/
     display: flex;
     color: white;
     align-items: center;
     gap: 20px;
 }
 
-#main__contacto {
+#main__contacto {         /*estilos hero para contacto*/
     display: flex;
     max-width: 100%;
     height: 90vh;
@@ -170,27 +168,24 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-#texto-hero-contacto {
+#main__porta {   /*estilos hero para portafolio*/
+    display: flex;
+    max-width: 100%;
+    height: 90vh;
+    gap: 1vh;
+    background-image: url("../images/hero-image.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#texto-hero-contacto { /*texto hero genericox*/
     margin-top: 40px;
     font-size: 20px;
     text-align: left;
 }
 
-.main__contactocaja1 {
-    max-width: 100%;
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-    font-size: 100px;
-}
 
-.main__contactocaja2 {
-    max-width: 50%;
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-    margin-top: 10px;
-}
 }
 /* Estilos para redes sociales en el footer */
 #redes {
@@ -211,4 +206,34 @@
   color: white;
   align-items: center;
   gap: 20px; /* Espacio ajustado */
+}
+/*estilos portafolio y grid para ordenamiento de cajas */
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre las imágenes */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .image-item img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+  }
+  
+  .image-item p {
+    margin-top: 10px; /* Espacio entre la imagen y la leyenda */
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    color: white; /* Color de la leyenda */
+    font-family: poppins;
+  }
+/*estilos portafolio*/
+
+#main__portacaja1 {
+display: flex;
+align-items: center;
+color: white;
+justify-content: center;
+
 }
