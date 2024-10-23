@@ -4,7 +4,7 @@
     max-width: auto;
     margin: 0;
     padding: 0;
-    border: 1px red solid;
+    /*border: 1px red solid;*/
 }
 
 #navbar__foto {
@@ -64,7 +64,7 @@
     align-items: center; /* Centrar elementos en el footer */
     justify-content: center;
     height: auto; /* Cambiado a auto para mejor flexibilidad */
-  }
+}
 
 @media (max-width: 768px) {
     /* estilos moviles */
