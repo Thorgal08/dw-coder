@@ -1,74 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DracoNet - Equipo Profesional en Administración y Tecnología</title>
+    <meta name="description" content="Descubre al equipo de expertos en DracoNet, dedicado a la administración, tecnología, recursos humanos y comunicaciones. Cada miembro aporta su experiencia para ofrecer servicios especializados.">
+    <meta name="keywords" content="DracoNet, equipo profesional, administración, tecnología, recursos humanos, comunicaciones, liderazgo empresarial">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"         
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"><!--bootstrap importacion-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>DracoNet</title>
 </head>
 <body>
     <header></header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--navbar con bootsrap-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
         <div class="container-fluid" id="nav__contenedor">
-        <div><img src="../icons/logo-pagina.png" class="img-fluid" id="navbar__foto" alt="img-fluid"></div>  <!--caja menu-->
-        <div class="d-flex d-lg-none" id="nav__iconosarriba"><!--contenedor de iconos se oculta en pantallas pequeñas-->
-            <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-            <a href="#" class="text-white mx-2"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-        </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <div><img src="../icons/logo-pagina.png" class="img-fluid" id="navbar__foto" alt="Logo DracoNet" aria-hidden="true"></div>
+            <div class="d-flex d-lg-none" id="nav__iconosarriba">
+                <a href="#" class="text-white mx-2" aria-label="Página de Facebook de DracoNet"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a href="#" class="text-white mx-2" aria-label="Página de Instagram de DracoNet"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Abrir navegación">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup"><!--caja menu-->
-        <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-            <a class="nav-link active" href="equipo.html">Equipo</a>
-            <a class="nav-link" href="nosotros.html">Nosotros</a>
-            <a class="nav-link" href="portafolio.html">Portafolio</a>
-            <a class="nav-link" href="contacto.html">Contacto</a>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                    <a class="nav-link active" href="equipo.html">Equipo</a>
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="portafolio.html">Portafolio</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+            <div class="d-none d-lg-flex" id="nav__iconos">
+                <a href="#" class="text-white ms-3" aria-label="Página de Facebook de DracoNet"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a href="#" class="text-white ms-3" aria-label="Página de Instagram de DracoNet"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            </div>
         </div>
-        </div>
-            <div class=" d-none d-lg-flex" id="nav__iconos"> <!--contendor que se oculta para pantallas grandes-->
-            <a href="#" class="text-white ms-3"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-            <a href="#" class="text-white ms-3 "><i class="fa-brands fa-instagram fa-2xl"></i></a>
-        </div>
-        </div>
-        </nav>
-    <main class="main d-flex flex-column flex-md-row" id="main__contacto"> <!--seccion hero ajustes de verticalidad flex -->
-        <div class="overlay"> <!--overlay para opacidad a negro-->
-        <div class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-around text-white "  >
-        <div class="main__equipocaja1"><h2>equipo</h2></div>
-        <div class="main__equipocaja2">
-            <h2 id="texto-hero-equipo">Telefono: +569219987</h2>
-            <h2 id="texto-hero-equipo">Direccion: 123 calle falsa</h2>
-            <h2 id="texto-hero-equipo">Correo: draconet@gmail.com</h2>
-        </div>
-        </div>
-        </div>
+    </nav>
+
+    <main class="container-fluid d-flex flex-column align-items-center" id="main__equipo">
+        <h1 class="text-center mb-4">Conoce a Nuestro Equipo</h1>
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../images/ceo.jpg" class="card-img-top" alt="Fotografía de Maichel Stevens, CEO de DracoNet, especialista en administración de empresas" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Maichel Stevens</h2>
+                        <p class="card-text">Administrador de Empresas</p>
+                        <small>CEO</small>
+                    </div>
+                </div>
+            </section>
+            <!-- Tarjeta 2 -->
+            <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../images/finanzas.jpg" class="card-img-top" alt="Imagen de Richard Soto, Director de Finanzas en DracoNet" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Richard Soto</h2>
+                        <p class="card-text">Administrador de Empresas</p>
+                        <small>Director de Finanzas</small>
+                    </div>
+                </div>
+            </section>
+            <!-- Tarjeta 3 -->
+            <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../images/cto.jpg" class="card-img-top" alt="Javier Solis, Director de Tecnología en DracoNet, especialista en Ingeniería Industrial" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Javier Solis</h2>
+                        <p class="card-text">Ingeniero Industrial</p>
+                        <small>Director de Tecnología</small>
+                    </div>
+                </div>
+            </section>
+            <!-- Tarjeta 4 -->
+            <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../images/recursos_humanos.jpg" class="card-img-top" alt="Gabriela Bustamante, Encargada de Recursos Humanos en DracoNet" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Gabriela Bustamante</h2>
+                        <p class="card-text">Administradora de Empresas</p>
+                        <small>Recursos Humanos</small>
+                    </div>
+                </div>
+            </section>
+            <!-- Tarjeta 5 -->
+            <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../images/marketing.jpg" class="card-img-top" alt="Alejandra Guzmán, Directora de Comunicaciones en DracoNet" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Alejandra Guzmán</h2>
+                        <p class="card-text">Publicista</p>
+                        <small>Directora de Comunicaciones</small>
+                    </div>
+                </div>
+            </section>
+            <!-- Tarjeta 6 -->
+            <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../images/operaciones.jpg" class="card-img-top" alt="Leonardo Ruiz, Director de Operaciones en DracoNet, experto en logística" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Leonardo Ruiz</h2>
+                        <p class="card-text">Ingeniero en Logística</p>
+                        <small>Director de Operaciones</small>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
-        
-    <footer id="footer" class="bg-dark text-white py-4"> <!--seccion footer-->
+
+    <footer id="footer" class="bg-dark text-white py-4">
         <div class="container">
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center ">
-            <section id="redes" class="text-center mb-3 mb-md-0">
-            <img src="../icons/logo-pagina.png" id="imagen-footer" alt="Logo" class="mb-2" style="max-height: 40px;">
-            <a href="#" class="text-white me-3"><i class="fa-brands fa-facebook fa-2x"></i></a>
-            <a href="#" class="text-white"><i class="fa-brands fa-instagram fa-2x"></i></a>
-            </section>
-            <section id="telefono" class="text-center mb-3 mb-md-0">
-                <i class="fa-solid fa-phone-flip fa-lg"></i>
-                <h5 class="mb-0">Teléfono: 123-456-7890</h5>
-            </section>
-            <section id="ubicacion" class="text-center">
-                <i class="fa-solid fa-location-dot fa-lg"></i>
-                <h5 class="mb-0">123 Calle Falsa</h5>
-            </section>
-        </div>
+            <!-- Sección de Descripción y Redes Sociales -->
+            <div class="row">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <img src="../icons/logo-pagina.png" alt="Logo DracoNet en el pie de página" style="max-height: 50px;" class="mb-3">
+                    <p>DracoNet es un equipo especializado en administración, tecnología, y comunicación, dedicado a impulsar el crecimiento de tu negocio con soluciones innovadoras.</p>
+                    <div>
+                        <a href="#" class="text-white me-3" aria-label="Enlace a Facebook de DracoNet"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white" aria-label="Enlace a Instagram de DracoNet"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Enlaces Rápidos -->
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="equipo.html" class="text-white text-decoration-none">Equipo</a></li>
+                        <li><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+                        <li><a href="portafolio.html" class="text-white text-decoration-none">Portafolio</a></li>
+                        <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Información de Contacto -->
+                <div class="col-md-4 text-center text-md-start">
+                    <h5>Contáctanos</h5>
+                    <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i>info@draconet.com</p>
+                    <p class="mb-1"><i class="fa-solid fa-phone me-2"></i>+56 9 1234 5678</p>
+                    <p class="mb-1"><i class="fa-solid fa-map-marker-alt me-2"></i>Providencia, Santiago, Chile</p>
+                </div>
+            </div>
+    
+            <!-- Línea divisoria y Derechos reservados -->
+            <hr class="border-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 DracoNet. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>      
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,12 +1,4 @@
 @charset "UTF-8";
-* {
-  list-style: none; /*estilos reset*/
-  text-decoration: none;
-  max-width: auto;
-  margin: 0;
-  padding: 0;
-}
-
 #navbar__foto { /*tamaño foto nav*/
   height: 50px;
   width: 50px;
@@ -38,11 +30,41 @@
   background-attachment: fixed;
   background-color: rgba(0, 0, 0, 0.8);
 }
+.main .main__caja1 { /*caja de relleno para el hero*/
+  max-width: 100%;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+.main .main__caja1 #draconet-logo-texto { /*estilos para el texto*/
+  font-size: 500px;
+  margin-top: 220px;
+}
+.main .main__caja1 #main__imagenhero {
+  height: 300px;
+  width: auto;
+}
+.main .main__caja2 { /*segtunda caja para el hero */
+  max-width: 50%;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#main__porta { /*estilos hero para portafolio*/
+  justify-content: center;
+  justify-items: center;
+  max-width: 100%;
+  height: 800px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../images/hero-image.png");
+}
 
 #main__contacto { /*main para index*/
   display: flex;
   max-width: 100%;
-  height: 100vh;
+  height: 1000px;
   gap: 15vh;
   background-image: url("../images/hero-image.png");
   background-size: cover;
@@ -50,31 +72,41 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#draconet-logo-texto { /*estilos para el texto*/
-  font-size: 60px;
-  margin-top: 80px;
-}
-
-.main__caja1 { /*caja de relleno para el hero*/
-  max-width: 100%;
-  text-align: center;
-  justify-items: center;
-  align-items: center;
-}
-
-.main__caja2 { /*segtunda caja para el hero */
-  max-width: 50%;
-  text-align: center;
-  justify-items: center;
-  align-items: center;
-}
-
-#footer { /*elementos en el footer*/
-  background-color: black;
-  flex-direction: column; /* Cambiado para mejorar la disposición en pantallas pequeñas */
-  align-items: center; /* Centrar elementos en el footer */
+#main__equipo { /*main para equipo*/
   justify-content: center;
-  height: auto; /* Cambiado a auto para mejor flexibilidad */
+  justify-items: center;
+  max-width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*estilos portafolio y grid para ordenamiento de cajas */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Espacio entre las imágenes */
+  text-align: center;
+  padding: 20px;
+}
+.image-grid .image-item img {
+  width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+  height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+.image-item p {
+  margin-top: 10px; /* Espacio entre la imagen y la leyenda */
+  font-size: 16px; /* Ajusta el tamaño del texto */
+  color: white; /* Color de la leyenda */
+  font-family: poppins;
+}
+
+/*estilos portafolio*/
+#main__portacaja1 {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -89,6 +121,22 @@
     background-attachment: fixed;
     align-items: center;
     box-flex-group: red;
+  }
+  #main__equipo { /*main para equipo*/
+    justify-content: center;
+    justify-items: center;
+    max-width: 100%;
+    height: 2300px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #main__porta { /*estilos hero para portafolio*/
+    justify-content: center;
+    justify-items: center;
+    max-width: 100%;
+    height: 2300px;
+    background-size: cover;
+    background-attachment: fixed;
   }
   .main__caja1 { /*ajustes hero texto*/
     max-width: 60%;
@@ -164,7 +212,114 @@
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, 0.8);
   }
+  #texto-hero-contacto { /*texto hero genericox*/
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: left;
+  }
+}
+/* Estilos para redes sociales en el footer */
+#redes {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 20px; /* Espacio ajustado */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* estilos moviles */
+  .main { /*main para index para moviles*/
+    display: flex;
+    max-width: 100%;
+    height: 800px;
+    gap: 15vh;
+    background-image: url("../images/hero-image.png");
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    box-flex-group: red;
+  }
+  #main__equipo { /*main para equipo*/
+    justify-content: center;
+    justify-items: center;
+    max-width: 100%;
+    height: 1300px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   #main__porta { /*estilos hero para portafolio*/
+    justify-content: center;
+    justify-items: center;
+    max-width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .main__caja1 { /*ajustes hero texto*/
+    max-width: 60%;
+    height: auto;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__caja2 { /*ajustes hero texto*/
+    max-width: 81%;
+    height: 50vh;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+  #draconet-logo-texto {
+    font-size: 30px;
+    margin-top: 90px;
+  }
+  .main__contactocaja1 { /*ajustes hero contenedores disposicion*/
+    max-width: 100%;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    font-size: 100px;
+  }
+  .main__contactocaja2 { /*ajustes hero contenedores disposicion*/
+    max-width: 50%;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  #texto-hero-contacto {
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: left;
+  }
+  .main__contactocaja1 h2 {
+    max-width: 100%;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  }
+  #footer {
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  #redes {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 20px;
+  }
+  #telefono, #ubicacion { /*diseño footer*/
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 20px;
+  }
+  #main__contacto { /*estilos hero para contacto*/
     display: flex;
     max-width: 100%;
     height: 90vh;
@@ -188,46 +343,33 @@
   gap: 20px; /* Espacio ajustado */
 }
 
-/* Imagen en el footer */
-#imagen-footer {
-  max-height: 40px; /* Ajusta el tamaño del logo */
+#footer { /*elementos en el footer*/
+  background-color: black;
+  flex-direction: column; /* Cambiado para mejorar la disposición en pantallas pequeñas */
+  align-items: center; /* Centrar elementos en el footer */
+  justify-content: center;
+  height: auto; /* Cambiado a auto para mejor flexibilidad */
 }
 
-/* Contenedor para teléfono y ubicación en el footer */
-#telefono, #ubicacion {
+/* Estilos para redes sociales en el footer */
+#redes {
   display: flex;
   color: white;
   align-items: center;
   gap: 20px; /* Espacio ajustado */
 }
 
-/*estilos portafolio y grid para ordenamiento de cajas */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px; /* Espacio entre las imágenes */
-  text-align: center;
-  padding: 20px;
+/* Imagen en el footer */
+#imagen-footer {
+  max-height: 40px; /* Ajusta el tamaño del logo */
 }
 
-.image-item img {
-  width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
-  height: auto; /* Mantiene la relación de aspecto de la imagen */
-}
-
-.image-item p {
-  margin-top: 10px; /* Espacio entre la imagen y la leyenda */
-  font-size: 16px; /* Ajusta el tamaño del texto */
-  color: white; /* Color de la leyenda */
-  font-family: poppins;
-}
-
-/*estilos portafolio*/
-#main__portacaja1 {
-  display: flex;
-  align-items: center;
-  color: white;
-  justify-content: center;
+* {
+  list-style: none; /*estilos reset*/
+  text-decoration: none;
+  max-width: auto;
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

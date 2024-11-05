@@ -7,21 +7,21 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"><!--bootstrap importacion-->
     <link rel="stylesheet" href="../css/style.css">
-    <title>DracoNet</title>
+    <title>DracoNet - Nosotros</title>
 </head>
 <body>
     <header></header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--navbar con bootsrap-->
         <div class="container-fluid" id="nav__contenedor">
-        <div><img src="../icons/logo-pagina.png" class="img-fluid" id="navbar__foto" alt="img-fluid"></div>  <!--caja menu-->
-        <div class="d-flex d-lg-none" id="nav__iconosarriba"><!--contenedor de iconos se oculta en pantallas pequeñas-->
+        <div><img src="../icons/logo-pagina.png" class="img-fluid" id="navbar__foto" alt="Logo"></div>  <!--caja menu-->
+        <div class="d-flex d-lg-none" id="nav__iconosarriba">
             <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook fa-2xl"></i></a>
             <a href="#" class="text-white mx-2"><i class="fa-brands fa-instagram fa-2xl"></i></a>
         </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup"><!--caja menu-->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             <a class="nav-link" href="equipo.html">Equipo</a>
@@ -30,43 +30,78 @@
             <a class="nav-link" href="contacto.html">Contacto</a>
         </div>
         </div>
-            <div class=" d-none d-lg-flex" id="nav__iconos"> <!--contendor que se oculta para pantallas grandes-->
+        <div class="d-none d-lg-flex" id="nav__iconos">
             <a href="#" class="text-white ms-3"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-            <a href="#" class="text-white ms-3 "><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="#" class="text-white ms-3"><i class="fa-brands fa-instagram fa-2xl"></i></a>
         </div>
         </div>
-        </nav>
-    <main class="main d-flex flex-column flex-md-row" id="main__contacto"> <!--seccion hero ajustes de verticalidad flex -->
-        <div class="overlay"> <!--overlay para opacidad a negro-->
-        <div class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-around text-white "  >
-        <div class="main__contatocaja1"><h2>Nosotros</h2></div>
-        <div class="main__contactocaja2">
-            <h2 id="texto-hero-contacto"></h2>
-            <h2 id="texto-hero-contacto"></h2>
-            <h2 id="texto-hero-contacto"></h2>
-        </div>
-        </div>
-        </div>
+    </nav>
+
+    <!-- Sección Nosotros -->
+    <main class="main py-5" id="main__nosotros">
+        <div class="container text-center text-white">
+            <h2 class="mb-4">¿Quiénes Somos?</h2>
+            <p class="lead">En DracoNet, somos un equipo apasionado y comprometido en ofrecer soluciones digitales innovadoras y efectivas. Nuestro objetivo es ayudar a las empresas a potenciar su presencia en el mundo digital a través de estrategias de marketing de alto impacto, diseño web moderno, y desarrollo de software a medida.</p>
+            <p>Nos especializamos en combinar creatividad y tecnología para brindar servicios que transformen la manera en que nuestros clientes interactúan con su público objetivo. Desde el marketing digital hasta el análisis de datos, nuestro enfoque es integral, con un fuerte énfasis en el alcance, posicionamiento y viralización en el mercado latinoamericano.</p>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <i class="fa-solid fa-chart-line fa-3x mb-3"></i>
+                    <h4>Estrategia de Marketing</h4>
+                    <p>Desarrollamos estrategias personalizadas que ayudan a nuestros clientes a destacar en el entorno digital.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa-solid fa-paint-brush fa-3x mb-3"></i>
+                    <h4>Diseño y Desarrollo</h4>
+                    <p>Creamos sitios web y aplicaciones atractivas y funcionales que reflejan la esencia de cada marca.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa-solid fa-chart-pie fa-3x mb-3"></i>
+                    <h4>Analítica Avanzada</h4>
+                    <p>Utilizamos datos para medir el rendimiento y mejorar continuamente las estrategias de nuestros clientes.</p>
+                </div>
+            </div>
         </div>
     </main>
         
-    <footer id="footer" class="bg-dark text-white py-4"> <!--seccion footer-->
+    <footer id="footer" class="bg-dark text-white py-4">
         <div class="container">
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center ">
-            <section id="redes" class="text-center mb-3 mb-md-0">
-            <img src="../icons/logo-pagina.png" id="imagen-footer" alt="Logo" class="mb-2" style="max-height: 40px;">
-            <a href="#" class="text-white me-3"><i class="fa-brands fa-facebook fa-2x"></i></a>
-            <a href="#" class="text-white"><i class="fa-brands fa-instagram fa-2x"></i></a>
-            </section>
-            <section id="telefono" class="text-center mb-3 mb-md-0">
-                <i class="fa-solid fa-phone-flip fa-lg"></i>
-                <h5 class="mb-0">Teléfono: 123-456-7890</h5>
-            </section>
-            <section id="ubicacion" class="text-center">
-                <i class="fa-solid fa-location-dot fa-lg"></i>
-                <h5 class="mb-0">123 Calle Falsa</h5>
-            </section>
-        </div>
+            <!-- Sección de Descripción y Redes Sociales -->
+            <div class="row">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <img src="../icons/logo-pagina.png" alt="Logo DracoNet en el pie de página" style="max-height: 50px;" class="mb-3">
+                    <p>DracoNet es un equipo especializado en administración, tecnología, y comunicación, dedicado a impulsar el crecimiento de tu negocio con soluciones innovadoras.</p>
+                    <div>
+                        <a href="#" class="text-white me-3" aria-label="Enlace a Facebook de DracoNet"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white" aria-label="Enlace a Instagram de DracoNet"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Enlaces Rápidos -->
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="equipo.html" class="text-white text-decoration-none">Equipo</a></li>
+                        <li><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+                        <li><a href="portafolio.html" class="text-white text-decoration-none">Portafolio</a></li>
+                        <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Información de Contacto -->
+                <div class="col-md-4 text-center text-md-start">
+                    <h5>Contáctanos</h5>
+                    <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i>info@draconet.com</p>
+                    <p class="mb-1"><i class="fa-solid fa-phone me-2"></i>+56 9 1234 5678</p>
+                    <p class="mb-1"><i class="fa-solid fa-map-marker-alt me-2"></i>Providencia, Santiago, Chile</p>
+                </div>
+            </div>
+    
+            <!-- Línea divisoria y Derechos reservados -->
+            <hr class="border-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 DracoNet. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>      
