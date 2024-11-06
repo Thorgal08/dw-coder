@@ -373,18 +373,16 @@
   align-items: center; /* Centrar elementos en el footer */
   justify-content: center;
   height: auto; /* Cambiado a auto para mejor flexibilidad */
+  /* Estilos para redes sociales en el footer */
+  /* Imagen en el footer */
 }
-
-/* Estilos para redes sociales en el footer */
-#redes {
+#footer #redes {
   display: flex;
   color: white;
   align-items: center;
   gap: 20px; /* Espacio ajustado */
 }
-
-/* Imagen en el footer */
-#imagen-footer {
+#footer #imagen-footer {
   max-height: 40px; /* Ajusta el tamaño del logo */
 }
 

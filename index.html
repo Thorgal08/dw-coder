@@ -1,57 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadatos y enlaces a CSS externos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuente de íconos Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS de Bootstrap para diseño responsivo -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Enlace al archivo de estilos personalizado -->
     <link rel="stylesheet" href="css/style.css"> 
     <title>DracoNet</title>
 </head>
 <body>
     <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--navbar con bootsrap-->
+    <!-- Navbar de Bootstrap con color de fondo oscuro -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <section class="container-fluid" id="nav__contenedor">
-        <section><img src="./icons/logo-pagina.png" class="img-fluid" id="navbar__foto" alt="img-fluid"></section>
-        <section class="d-flex d-lg-none" id="nav__iconosarriba"> <!--contenedor de iconos se oculta en pantallas pequeñas-->
-            <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-            <a href="#" class="text-white mx-2"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-        </section>
+            <!-- Logo de la página -->
+            <section><img src="./icons/logo-pagina.png" class="img-fluid" id="navbar__foto" alt="img-fluid"></section>
+            <!-- Iconos de redes sociales para dispositivos pequeños -->
+            <section class="d-flex d-lg-none" id="nav__iconosarriba">
+                <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            </section>
+            <!-- Botón de menú desplegable para pantallas pequeñas -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
-        <section class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-        <section class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link" href="./pages/equipo.html">Equipo</a>
-            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-            <a class="nav-link" href="./pages/portafolio.html">Portafolio</a>
-            <a class="nav-link" href="./pages/contacto.html">Contacto</a>   
-        </section>
-        </section>
-        <section class=" d-none d-lg-flex" id="nav__iconos"> <!--contendor que se oculta para pantallas grandes-->
-            <a href="#" class="text-white ms-3"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-            <a href="#" class="text-white ms-3 "><i class="fa-brands fa-instagram fa-2xl"></i></a>
-        </section>
+            <!-- Contenedor de los enlaces de navegación centrados -->
+            <section class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <section class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="./pages/equipo.html">Equipo</a>
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="./pages/portafolio.html">Portafolio</a>
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>   
+                </section>
+            </section>
+            <!-- Iconos de redes sociales para dispositivos grandes -->
+            <section class="d-none d-lg-flex" id="nav__iconos">
+                <a href="#" class="text-white ms-3"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a href="#" class="text-white ms-3"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            </section>
         </section>
     </nav>
     </header>
     
     <main class="main d-flex flex-column flex-md-row">
-            <section class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-around text-white">
-                <img src="./icons/logo-pagina.png" class="img-fluid" id="main__imagenhero" alt="Logo DracoNet">
-                <article>
-                    <h1 id="draconet-logo-texto">DracoNet</h1>
-                    <h2 id="texto-hero">Soluciones digitales</h2>
-                    <article id="parrafo-hero">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reprehenderit pariatur vel ut eos accusamus corporis quia quo nostrum, delectus rem doloremque voluptates nesciunt cum maiores dolor laborum qui quibusdam!</article>
-                </article>
-            </section>
+        <!-- Sección principal con imagen y texto -->
+        <section class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-around text-white">
+            <img src="./icons/logo-pagina.png" class="img-fluid" id="main__imagenhero" alt="Logo DracoNet">
+            <article>
+                <h1 id="draconet-logo-texto">DracoNet</h1>
+                <h2 id="texto-hero">Soluciones digitales</h2>
+                <article id="parrafo-hero">DracoNet es una empresa innovadora y dinámica que ofrece soluciones integrales en los ámbitos de administración, tecnología y comunicación. Nuestro objetivo es impulsar el crecimiento y la eficiencia de las organizaciones a través de servicios personalizados que abarcan desde la planificación estratégica hasta la implementación de herramientas digitales avanzadas.</article>
+            </article>
+        </section>
     </main>
 
+    <!-- Sección de servicios -->
     <section id="servicios" class="py-5 bg-light text-center">
         <h2 class="mb-4">Nuestros Servicios</h2>
         <p class="mb-5">En DracoNet ofrecemos una amplia gama de servicios digitales para ayudar a tu negocio a alcanzar el éxito en el entorno online.</p>
         <section class="row">
+            <!-- Servicio de Desarrollo Web -->
             <section class="col-md-4 mb-4">
                 <div class="card border-0 shadow-sm">
                     <article class="card-body">
@@ -61,6 +74,7 @@
                     </article>
                 </div>
             </section>
+            <!-- Servicio de Marketing Digital -->
             <article class="col-md-4 mb-4">
                 <div class="card border-0 shadow-sm">
                     <article class="card-body">
@@ -70,6 +84,7 @@
                     </article>
                 </div>
             </article>
+            <!-- Servicio de Diseño Gráfico -->
             <section class="col-md-4 mb-4">
                 <div class="card border-0 shadow-sm">
                     <article class="card-body">
@@ -82,41 +97,46 @@
         </section>
     </section>
 
+    <!-- Footer con información de contacto y enlaces -->
     <footer id="footer" class="bg-dark text-white py-4">
         <section class="container">
             <section class="row">
+                <!-- Columna con información de la empresa -->
                 <section class="col-md-4 text-center text-md-start mb-3 mb-md-0">
                     <img src="./icons/logo-pagina.png" alt="Logo DracoNet" style="max-height: 50px;" class="mb-3">
                     <p>DracoNet es un equipo especializado en administración, tecnología, y comunicación, dedicado a impulsar el crecimiento de tu negocio con soluciones innovadoras.</p>
+                    <!-- Iconos de redes sociales -->
                     <figure>
                         <a href="#" class="text-white me-3" aria-label="Enlace a Facebook de DracoNet"><i class="fa-brands fa-facebook fa-lg"></i></a>
                         <a href="#" class="text-white" aria-label="Enlace a Instagram de DracoNet"><i class="fa-brands fa-instagram fa-lg"></i></a>
                     </figure>
                 </section>
-
+                <!-- Columna de enlaces rápidos -->
                 <section class="col-md-4 text-center text-md-start mb-3 mb-md-0">
                     <h5>Enlaces Rápidos</h5>
                     <ul class="list-unstyled">
                         <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
                         <li><a href="./pages/equipo.html" class="text-white text-decoration-none">Equipo</a></li>
-                        <li><a href="./pages/nosotros.html class="text-white text-decoration-none">Nosotros</a></li>
+                        <li><a href="./pages/nosotros.html"class="text-white text-decoration-none">Nosotros</a></li>
                         <li><a href="./pages/portafolio.html" class="text-white text-decoration-none">Portafolio</a></li>
                         <li><a href="./pages/contacto.html" class="text-white text-decoration-none">Contacto</a></li>
                     </ul>
                 </section>
-
+                <!-- Columna de contacto -->
                 <article class="col-md-4 text-center text-md-start">
                     <h5>Contáctanos</h5>
                     <p>Email: contacto@draconet.com</p>
                     <p>Teléfono: +56 9 1234 5678</p>
                 </article>
             </section>
+            <!-- Derechos reservados -->
             <aside class="text-center mt-4">
                 <p>&copy; 2024 DracoNet. Todos los derechos reservados.</p>
             </aside>
         </section>
     </footer>
 
+    <!-- Scripts de Bootstrap para funcionalidad -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

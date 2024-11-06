@@ -1,77 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Meta etiquetas para la codificación de caracteres y la vista en dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Enlace a Font Awesome para los íconos en la página -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"         
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"><!--bootstrap importacion-->
+    
+    <!-- Enlace a la hoja de estilos de Bootstrap para el diseño responsivo y componentes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> <!--bootstrap importacion-->
+    
+    <!-- Enlace a la hoja de estilos personalizada -->
     <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Título de la página -->
     <title>DracoNet - Nosotros</title>
+    
+    <!-- Meta descripción para SEO -->
     <meta name="description" content="En DracoNet ofrecemos soluciones digitales innovadoras en marketing, diseño web y desarrollo de software para potenciar tu presencia online.">
 </head>
 <body>
+
+    <!-- Sección de navegación -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--navbar con bootsrap-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--navbar con bootstrap-->
             <section class="container-fluid" id="nav__contenedor">
-            <section><img src="../icons/logo-pagina.png" class="img-fluid" id="navbar__foto" alt="img-fluid"></section>
-            <section class="d-flex d-lg-none" id="nav__iconosarriba"> <!--contenedor de iconos se oculta en pantallas pequeñas-->
-                <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-            </section>
+            
+                <!-- Logo de DracoNet -->
+                <section><img src="../icons/logo-pagina.png" class="img-fluid" id="navbar__foto" alt="img-fluid"></section>
+                
+                <!-- Iconos de redes sociales, solo visibles en pantallas pequeñas -->
+                <section class="d-flex d-lg-none" id="nav__iconosarriba"> <!--contenedor de iconos se oculta en pantallas pequeñas-->
+                    <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                </section>
+                
+                <!-- Botón para mostrar el menú en dispositivos pequeños -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            <section class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-            <section class="navbar-nav">
-                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                <a class="nav-link" href="equipo.html">Equipo</a>
-                <a class="nav-link active" href="nosotros.html">Nosotros</a>
-                <a class="nav-link" href="portafolio.html">Portafolio</a>
-                <a class="nav-link" href="contacto.html">Contacto</a>   
-            </section>
-            </section>
-            <section class=" d-none d-lg-flex" id="nav__iconos"> <!--contendor que se oculta para pantallas grandes-->
-                <a href="#" class="text-white ms-3"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                <a href="#" class="text-white ms-3 "><i class="fa-brands fa-instagram fa-2xl"></i></a>
-            </section>
+                
+                <!-- Menú de navegación, visible en pantallas grandes -->
+                <section class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <section class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link" href="equipo.html">Equipo</a>
+                        <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="portafolio.html">Portafolio</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>   
+                    </section>
+                </section>
+                
+                <!-- Iconos de redes sociales, visibles solo en pantallas grandes -->
+                <section class="d-none d-lg-flex" id="nav__iconos"> <!--contendor que se oculta para pantallas grandes-->
+                    <a href="#" class="text-white ms-3"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href="#" class="text-white ms-3"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                </section>
             </section>
         </nav>
-        </header>
-    <!-- Sección Nosotros -->
+    </header>
+
+    <!-- Sección principal: Nosotros -->
     <main class="py-5" id="main__nosotros">
         <section class="container text-center text-white">
+            <!-- Título de la sección -->
             <h1 class="mb-4">DracoNet - Acerca de Nosotros</h1>
             <h2 class="mb-4">¿Quiénes Somos?</h2>
             <p class="text-draco">En DracoNet, somos un equipo apasionado y comprometido en ofrecer soluciones digitales innovadoras y efectivas. Nuestro objetivo es ayudar a las empresas a potenciar su presencia en el mundo digital a través de estrategias de marketing de alto impacto, diseño web moderno, y desarrollo de software a medida.</p>
             <p>Nos especializamos en combinar creatividad y tecnología para brindar servicios que transformen la manera en que nuestros clientes interactúan con su público objetivo. Desde el marketing digital hasta el análisis de datos, nuestro enfoque es integral, con un fuerte énfasis en el alcance, posicionamiento y viralización en el mercado latinoamericano.</p>
+
+            <!-- Servicios ofrecidos por DracoNet -->
             <section class="row mt-5">
+                <!-- Servicio de Estrategia de Marketing -->
                 <article class="col-md-4">
-                    <i class="fa-solid fa-chart-line fa-3x mb-3"></i>
+                    <i class="fa-solid fa-chart-line fa-3x mb-3"></i> <!-- Icono de estrategia -->
                     <h4>Estrategia de Marketing</h4>
                     <p>Desarrollamos estrategias personalizadas que ayudan a nuestros clientes a destacar en el entorno digital.</p>
                 </article>
+                
+                <!-- Servicio de Diseño y Desarrollo -->
                 <article class="col-md-4">
-                    <i class="fa-solid fa-paint-brush fa-3x mb-3"></i>
+                    <i class="fa-solid fa-paint-brush fa-3x mb-3"></i> <!-- Icono de diseño -->
                     <h4>Diseño y Desarrollo</h4>
                     <p>Creamos sitios web y aplicaciones atractivas y funcionales que reflejan la esencia de cada marca.</p>
                 </article>
+                
+                <!-- Servicio de Analítica Avanzada -->
                 <article class="col-md-4">
-                    <i class="fa-solid fa-chart-pie fa-3x mb-3"></i>
+                    <i class="fa-solid fa-chart-pie fa-3x mb-3"></i> <!-- Icono de análisis -->
                     <h4>Analítica Avanzada</h4>
                     <p>Utilizamos datos para medir el rendimiento y mejorar continuamente las estrategias de nuestros clientes.</p>
-                </art>
-            </article>
+                </article>
+            </section>
         </section>
     </main>
         
+    <!-- Pie de página -->
     <footer id="footer" class="bg-dark text-white py-4">
         <section class="container">
             <!-- Sección de Descripción y Redes Sociales -->
             <article class="row">
                 <article class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <!-- Logo y Descripción de DracoNet -->
                     <img src="../icons/logo-pagina.png" alt="Logo DracoNet en el pie de página" style="max-height: 50px;" class="mb-3">
                     <p>DracoNet es un equipo especializado en administración, tecnología, y comunicación, dedicado a impulsar el crecimiento de tu negocio con soluciones innovadoras.</p>
+                    
+                    <!-- Enlaces a redes sociales -->
                     <figure>
                         <a href="#" class="text-white me-3" aria-label="Enlace a Facebook de DracoNet"><i class="fa-brands fa-facebook fa-lg"></i></a>
                         <a href="#" class="text-white" aria-label="Enlace a Instagram de DracoNet"><i class="fa-brands fa-instagram fa-lg"></i></a>
@@ -90,7 +126,7 @@
                     </ul>
                 </section>
 
-                <!-- Derechos de Autor -->
+                <!-- Información de contacto -->
                 <aside class="col-md-4 text-center text-md-start">
                     <h5>Contacto</h5>
                     <p>Correo: <a href="mailto:info@draconet.com" class="text-white text-decoration-none">info@draconet.com</a></p>
@@ -99,7 +135,6 @@
             </article>
         </section>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

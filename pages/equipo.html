@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Meta etiquetas para definir la codificación de caracteres y la vista de la página en dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página, que aparecerá en la pestaña del navegador -->
     <title>DracoNet - Equipo Profesional en Administración y Tecnología</title>
+    
+    <!-- Meta etiquetas de descripción y palabras clave para SEO -->
     <meta name="description" content="Descubre al equipo de expertos en DracoNet, dedicado a la administración, tecnología, recursos humanos y comunicaciones. Cada miembro aporta su experiencia para ofrecer servicios especializados.">
     <meta name="keywords" content="DracoNet, equipo profesional, administración, tecnología, recursos humanos, comunicaciones, liderazgo empresarial">
 
+    <!-- Enlace a la hoja de estilos de Font Awesome para íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"         
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Enlace a la hoja de estilos de Bootstrap para diseño responsivo y componentes -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    
+    <!-- Enlace a la hoja de estilos personalizada -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
+    <!-- Sección de navegación, contiene el menú de navegación con Bootstrap -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--navbar con bootsrap-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--navbar con Bootstrap-->
             <section class="container-fluid" id="nav__contenedor">
-            <section><img src="../icons/logo-pagina.png" class="img-fluid" id="navbar__foto" alt="img-fluid"></section>
-            <section class="d-flex d-lg-none" id="nav__iconosarriba"> <!--contenedor de iconos se oculta en pantallas pequeñas-->
-                <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-            </section>
+            
+                <!-- Logo de DracoNet -->
+                <section><img src="../icons/logo-pagina.png" class="img-fluid" id="navbar__foto" alt="img-fluid"></section>
+
+                <!-- Iconos de redes sociales para pantallas pequeñas (se ocultan en pantallas grandes) -->
+                <section class="d-flex d-lg-none" id="nav__iconosarriba"> 
+                    <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                </section>
+                
+                <!-- Botón de menú hamburguesa para pantallas pequeñas -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            <section class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-            <section class="navbar-nav">
-                <a class="nav-link " aria-current="page" href="../index.html">Home</a>
-                <a class="nav-link active" href="equipo.html">Equipo</a>
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
-                <a class="nav-link" href="portafolio.html">Portafolio</a>
-                <a class="nav-link" href="contacto.html">Contacto</a>   
-            </section>
-            </section>
-            <section class=" d-none d-lg-flex" id="nav__iconos"> <!--contendor que se oculta para pantallas grandes-->
-                <a href="#" class="text-white ms-3"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                <a href="#" class="text-white ms-3 "><i class="fa-brands fa-instagram fa-2xl"></i></a>
-            </section>
+
+                <!-- Menú de navegación que se despliega en pantallas grandes -->
+                <section class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <section class="navbar-nav">
+                        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link active" href="equipo.html">Equipo</a>
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="portafolio.html">Portafolio</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>   
+                    </section>
+                </section>
+                
+                <!-- Iconos de redes sociales para pantallas grandes -->
+                <section class="d-none d-lg-flex" id="nav__iconos"> 
+                    <a href="#" class="text-white ms-3"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href="#" class="text-white ms-3 "><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                </section>
             </section>
         </nav>
-        </header>
+    </header>
+
+    <!-- Sección principal que contiene la información del equipo -->
     <main class="container-fluid d-flex flex-column align-items-center" id="main__equipo">
         <h1 class="text-center mb-4">Conoce a Nuestro Equipo</h1>
         <div class="row">
-            <!-- Tarjeta 1 -->
+            <!-- Tarjeta 1: Información de Maichel Stevens -->
             <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="card">
                     <img src="../images/ceo.jpg" class="card-img-top" alt="Fotografía de Maichel Stevens, CEO de DracoNet, especialista en administración de empresas" style="height: 200px; object-fit: cover;">
@@ -54,21 +78,23 @@
                     </div>
                 </div>
             </section>
-                        <!-- Tarjeta 2 -->
-                        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="card">
-                                <img src="../images/finanzas.jpg" class="card-img-top" alt="Fotografía de Richard Soto, in de DracoNet, especialista en ingnieria comercial" style="height: 200px; object-fit: cover;">
-                                <div class="card-body text-center">
-                                    <h2 class="card-title">Richard Soto</h2>
-                                    <p class="card-text">Ingeniero Comercial</p>
-                                    <small class="card-desc">Director de Finanzas</small>
-                                </div>
-                            </div>
-                        </section>
-            <!-- Tarjeta 3 -->
+
+            <!-- Tarjeta 2: Información de Richard Soto -->
+            <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../images/finanzas.jpg" class="card-img-top" alt="Fotografía de Richard Soto, Director de Finanzas en DracoNet, especialista en ingeniería comercial" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Richard Soto</h2>
+                        <p class="card-text">Ingeniero Comercial</p>
+                        <small class="card-desc">Director de Finanzas</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tarjeta 3: Información de Javier Solis -->
             <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <article class="card">
-                    <img src="../images/cto.jpg" class="card-img-top" alt="Javier Solis, Director de Tecnología en DracoNet, especialista en Ingeniería Industrial" style="height: 200px; object-fit: cover;">
+                    <img src="../images/cto.jpg" class="card-img-top" alt="Fotografía de Javier Solis, Director de Tecnología en DracoNet, especialista en Ingeniería Industrial" style="height: 200px; object-fit: cover;">
                     <article class="card-body text-center">
                         <h2 class="card-title">Javier Solis</h2>
                         <p class="card-text">Ingeniero Industrial</p>
@@ -76,10 +102,11 @@
                     </article>
                 </article>
             </section>
-            <!-- Tarjeta 4 -->
+
+            <!-- Tarjeta 4: Información de Gabriela Bustamante -->
             <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <section class="card">
-                    <img src="../images/recursos_humanos.jpg" class="card-img-top" alt="Gabriela Bustamante, Encargada de Recursos Humanos en DracoNet" style="height: 200px; object-fit: cover;">
+                    <img src="../images/recursos_humanos.jpg" class="card-img-top" alt="Fotografía de Gabriela Bustamante, Encargada de Recursos Humanos en DracoNet" style="height: 200px; object-fit: cover;">
                     <div class="card-body text-center">
                         <h2 class="card-title">Gabriela Bustamante</h2>
                         <p class="card-text">Administradora de Empresas</p>
@@ -87,10 +114,11 @@
                     </div>
                 </section>
             </section>
-            <!-- Tarjeta 5 -->
+
+            <!-- Tarjeta 5: Información de Alejandra Guzmán -->
             <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="card">
-                    <img src="../images/marketing.jpg" class="card-img-top" alt="Alejandra Guzmán, Directora de Comunicaciones en DracoNet" style="height: 200px; object-fit: cover;">
+                    <img src="../images/marketing.jpg" class="card-img-top" alt="Fotografía de Alejandra Guzmán, Directora de Comunicaciones en DracoNet" style="height: 200px; object-fit: cover;">
                     <div class="card-body text-center">
                         <h2 class="card-title">Alejandra Guzmán</h2>
                         <p class="card-text">Publicista</p>
@@ -98,10 +126,11 @@
                     </div>
                 </div>
             </section>
-            <!-- Tarjeta 6 -->
+
+            <!-- Tarjeta 6: Información de Leonardo Ruiz -->
             <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="card">
-                    <img src="../images/operaciones.jpg" class="card-img-top" alt="Leonardo Ruiz, Director de Operaciones en DracoNet, experto en logística" style="height: 200px; object-fit: cover;">
+                    <img src="../images/operaciones.jpg" class="card-img-top" alt="Fotografía de Leonardo Ruiz, Director de Operaciones en DracoNet, experto en logística" style="height: 200px; object-fit: cover;">
                     <div class="card-body text-center">
                         <h2 class="card-title">Leonardo Ruiz</h2>
                         <p class="card-text">Ingeniero en Logística</p>
@@ -112,6 +141,7 @@
         </div>
     </main>
 
+    <!-- Sección de pie de página -->
     <footer id="footer" class="bg-dark text-white py-4">
         <section class="container">
             <!-- Sección de Descripción y Redes Sociales -->
@@ -153,8 +183,9 @@
             </article>
         </section>
     </footer>
-    
 
+    <!-- Scripts de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
