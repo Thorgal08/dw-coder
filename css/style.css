@@ -124,7 +124,7 @@
   .main { /*main para index para moviles*/
     display: flex;
     max-width: 100%;
-    height: 150vh;
+    height: 900px;
     gap: 15vh;
     background-image: url("../images/hero-image.png");
     background-size: cover;
