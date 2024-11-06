@@ -53,8 +53,19 @@
     height: 800px;;
     background-size:cover;
     background-attachment: fixed;
-    background-image: url("../images/hero-image.png");
+    background-image: url("../images/portafolio-fondo.jpg");
   }
+
+  #main__nosotros { /*estilos hero para portafolio*/
+    justify-content: center;
+    justify-items: center;
+    max-width: 100%;
+    height: 800px;;
+    background-size:cover;
+    background-attachment: fixed;
+    background-image: url("../images/nosotros.jpg");
+  }
+
 
 
 #main__contacto{                        /*main para index*/
@@ -117,4 +128,8 @@ color: white;
 justify-content: center;
 
 }
+
+
+
+
 

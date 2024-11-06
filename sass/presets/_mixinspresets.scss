@@ -1,0 +1,76 @@
+
+// Mixin para estilo de texto descripcion 
+@mixin text-style{
+
+  color: #7b7b7b;
+  text-align: center;
+  font-size: 20px;
+  font-weight: light;
+
+}
+
+// Mixin para estilo de título
+@mixin title-style {
+  color: #4f4f4f;
+  text-align: center
+  font-size 20px;
+  font-weight: semi-bold;
+
+}
+
+
+@mixin card-small {
+  color: #292929;
+  text-align: center
+  font-size 20px;
+  font-weight: lighter;
+
+}
+
+
+@mixin card-text-porta {
+  color: #1f1d1d;
+  text-align: center
+  font-size 20px;
+  font-weight: lighter;
+
+}
+
+@mixin card-title-porta {
+  color: #484848;
+  text-align: center
+  font-size 20px;
+  font-weight: bold;
+
+}
+
+
+
+
+
+// Estilos para el texto
+.card-text {
+  @include text-style;
+}
+
+// Estilos para los títulos
+.card-title {
+  @include title-style;
+}
+
+
+
+.card-text-porta {
+
+  @include card-text-porta;
+  
+  }
+
+  .card-title-porta {
+
+    @include card-title-porta;
+    
+    }
+    
+  
+

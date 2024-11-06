@@ -1,0 +1,162 @@
+
+/* Estilos de animación */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Animaciones de entrada */
+@keyframes slideIn {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* Estilo para los textos en el main */
+#draconet-logo-texto, 
+#texto-hero {
+    opacity: 0; /* Comienza oculto */
+    animation: slideIn 1s ease-out forwards;
+}
+
+#texto-hero {
+    animation-delay: 0.3s;
+}
+
+#main__imagenhero {
+    opacity: 0; /* Comienza oculto */
+    animation: zoomIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* Estilo para las tarjetas de servicios */
+.card {
+    opacity: 0; /* Comienza oculto */
+    animation: slideIn 0.5s ease-out forwards; /* Animación de entrada */
+}
+
+.card:nth-child(1) {
+    animation-delay: 0.6s; /* Se animará después del logo y el texto */
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.8s; /* Retraso adicional para la segunda tarjeta */
+}
+
+.card:nth-child(3) {
+    animation-delay: 1s; /* Retraso adicional para la tercera tarjeta */
+}
+
+.card:nth-child(4) {
+    animation-delay: 1.2s; /* Retraso adicional para la cuarta tarjeta */
+}
+
+.card:nth-child(5) {
+    animation-delay: 1.4s; /* Retraso adicional para la quinta tarjeta */
+}
+
+.card:nth-child(6) {
+    animation-delay: 1.6s; /* Retraso adicional para la sexta tarjeta */
+}
+
+/* Estilo para los encabezados h2 */
+h2 {
+    animation: slideIn 0.5s ease forwards; /* Animación para los encabezados */
+    opacity: 0; /* Iniciar oculto */
+}
+
+/* Estilo para el footer */
+#footer {
+    opacity: 0; /* Comienza oculto */
+    animation: slideIn 1s ease-out forwards; /* Animación para el pie de página */
+    animation-delay: 1.8s; /* Retraso para el footer */
+}
+
+/* Botón primario */
+.btn-primary {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Sombra más oscura */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+}
+
+/* Estilo del mapa */
+.map-responsive {
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Animaciones para Textos */
+
+/* Animación de deslizamiento y desvanecimiento para textos */
+.text-slide-in {
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(20px); /* Desplazamiento hacia abajo */
+    animation: textSlideIn 0.6s forwards; /* Animación al cargar */
+}
+
+@keyframes textSlideIn {
+    from {
+        opacity: 0; /* Invisible */
+        transform: translateY(20px); /* Desplazado hacia abajo */
+    }
+    to {
+        opacity: 1; /* Totalmente visible */
+        transform: translateY(0); /* Posición original */
+    }
+}
+
+/* Efecto de escalado al pasar el mouse sobre los textos */
+.text-hover {
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.text-hover:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+/* Animación de entrada para párrafos */
+p {
+    opacity: 0; /* Inicialmente invisible */
+    animation: textFadeIn 0.6s forwards; /* Animación al cargar */
+    animation-delay: 0.3s; /* Retardo para que aparezcan después de los títulos */
+}
+
+@keyframes textFadeIn {
+    from {
+        opacity: 0; /* Invisible */
+    }
+    to {
+        opacity: 1; /* Totalmente visible */
+    }
+}
+

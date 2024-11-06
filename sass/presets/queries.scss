@@ -251,3 +251,14 @@
     align-items: center;
     gap: 20px; /* Espacio ajustado */
   }
+
+  /* Responsive animaciones */
+@media (max-width: 768px) {
+    #draconet-logo-texto {
+        font-size: 2.5rem;
+    }
+    
+    #texto-hero {
+        font-size: 1.2rem;
+    }
+}

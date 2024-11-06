@@ -13,32 +13,33 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header></header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
-        <div class="container-fluid" id="nav__contenedor">
-            <div><img src="../icons/logo-pagina.png" class="img-fluid" id="navbar__foto" alt="Logo DracoNet" aria-hidden="true"></div>
-            <div class="d-flex d-lg-none" id="nav__iconosarriba">
-                <a href="#" class="text-white mx-2" aria-label="Página de Facebook de DracoNet"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                <a href="#" class="text-white mx-2" aria-label="Página de Instagram de DracoNet"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Abrir navegación">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                    <a class="nav-link active" href="equipo.html">Equipo</a>
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    <a class="nav-link" href="portafolio.html">Portafolio</a>
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </div>
-            </div>
-            <div class="d-none d-lg-flex" id="nav__iconos">
-                <a href="#" class="text-white ms-3" aria-label="Página de Facebook de DracoNet"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                <a href="#" class="text-white ms-3" aria-label="Página de Instagram de DracoNet"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-            </div>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <section class="container-fluid" id="nav__contenedor">
+                <figure><img src="../icons/logo-pagina.png" class="img-fluid" id="navbar__foto" alt="Logo DracoNet"></figure>
+                <figure class="d-flex d-lg-none" id="nav__iconosarriba">
+                    <a href="#" class="text-white mx-2" aria-label="Facebook de DracoNet"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href="#" class="text-white mx-2" aria-label="Instagram de DracoNet"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                </figure>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <aside class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link active" href="equipo.html">Equipo</a>
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link " href="portafolio.html">Portafolio</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </aside>
+                </section>
+                <figure class="d-none d-lg-flex" id="nav__iconos">
+                    <a href="#" class="text-white ms-3" aria-label="Facebook de DracoNet"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href="#" class="text-white ms-3" aria-label="Instagram de DracoNet"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                </figure>
+            </section>
+        </nav>
+    </header>
 
     <main class="container-fluid d-flex flex-column align-items-center" id="main__equipo">
         <h1 class="text-center mb-4">Conoce a Nuestro Equipo</h1>
@@ -50,42 +51,42 @@
                     <div class="card-body text-center">
                         <h2 class="card-title">Maichel Stevens</h2>
                         <p class="card-text">Administrador de Empresas</p>
-                        <small>CEO</small>
+                        <small class="card-desc">CEO</small>
                     </div>
                 </div>
             </section>
-            <!-- Tarjeta 2 -->
-            <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="card">
-                    <img src="../images/finanzas.jpg" class="card-img-top" alt="Imagen de Richard Soto, Director de Finanzas en DracoNet" style="height: 200px; object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h2 class="card-title">Richard Soto</h2>
-                        <p class="card-text">Administrador de Empresas</p>
-                        <small>Director de Finanzas</small>
-                    </div>
-                </div>
-            </section>
+                        <!-- Tarjeta 2 -->
+                        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card">
+                                <img src="../images/finanzas.jpg" class="card-img-top" alt="Fotografía de Richard Soto, in de DracoNet, especialista en ingnieria comercial" style="height: 200px; object-fit: cover;">
+                                <div class="card-body text-center">
+                                    <h2 class="card-title">Richard Soto</h2>
+                                    <p class="card-text">Ingeniero Comercial</p>
+                                    <small class="card-desc">Director de Finanzas</small>
+                                </div>
+                            </div>
+                        </section>
             <!-- Tarjeta 3 -->
             <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="card">
+                <article class="card">
                     <img src="../images/cto.jpg" class="card-img-top" alt="Javier Solis, Director de Tecnología en DracoNet, especialista en Ingeniería Industrial" style="height: 200px; object-fit: cover;">
-                    <div class="card-body text-center">
+                    <article class="card-body text-center">
                         <h2 class="card-title">Javier Solis</h2>
                         <p class="card-text">Ingeniero Industrial</p>
-                        <small>Director de Tecnología</small>
-                    </div>
-                </div>
+                        <small class="card-desc">Director de Tecnología</small>
+                    </article>
+                </article>
             </section>
             <!-- Tarjeta 4 -->
             <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="card">
+                <section class="card">
                     <img src="../images/recursos_humanos.jpg" class="card-img-top" alt="Gabriela Bustamante, Encargada de Recursos Humanos en DracoNet" style="height: 200px; object-fit: cover;">
                     <div class="card-body text-center">
                         <h2 class="card-title">Gabriela Bustamante</h2>
                         <p class="card-text">Administradora de Empresas</p>
-                        <small>Recursos Humanos</small>
+                        <small class="card-desc">Recursos Humanos</small>
                     </div>
-                </div>
+                </section>
             </section>
             <!-- Tarjeta 5 -->
             <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
@@ -94,7 +95,7 @@
                     <div class="card-body text-center">
                         <h2 class="card-title">Alejandra Guzmán</h2>
                         <p class="card-text">Publicista</p>
-                        <small>Directora de Comunicaciones</small>
+                        <small class="card-desc">Directora de Comunicaciones</small>
                     </div>
                 </div>
             </section>
@@ -105,7 +106,7 @@
                     <div class="card-body text-center">
                         <h2 class="card-title">Leonardo Ruiz</h2>
                         <p class="card-text">Ingeniero en Logística</p>
-                        <small>Director de Operaciones</small>
+                        <small class="card-desc">Director de Operaciones</small>
                     </div>
                 </div>
             </section>
@@ -113,17 +114,17 @@
     </main>
 
     <footer id="footer" class="bg-dark text-white py-4">
-        <div class="container">
+        <section class="container">
             <!-- Sección de Descripción y Redes Sociales -->
-            <div class="row">
-                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+            <section class="row">
+                <article class="col-md-4 text-center text-md-start mb-3 mb-md-0">
                     <img src="../icons/logo-pagina.png" alt="Logo DracoNet en el pie de página" style="max-height: 50px;" class="mb-3">
                     <p>DracoNet es un equipo especializado en administración, tecnología, y comunicación, dedicado a impulsar el crecimiento de tu negocio con soluciones innovadoras.</p>
-                    <div>
+                    <figure>
                         <a href="#" class="text-white me-3" aria-label="Enlace a Facebook de DracoNet"><i class="fa-brands fa-facebook fa-lg"></i></a>
                         <a href="#" class="text-white" aria-label="Enlace a Instagram de DracoNet"><i class="fa-brands fa-instagram fa-lg"></i></a>
-                    </div>
-                </div>
+                    </figure>
+                </article>
     
                 <!-- Enlaces Rápidos -->
                 <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
@@ -144,14 +145,14 @@
                     <p class="mb-1"><i class="fa-solid fa-phone me-2"></i>+56 9 1234 5678</p>
                     <p class="mb-1"><i class="fa-solid fa-map-marker-alt me-2"></i>Iquique, Chile</p>
                 </div>
-            </div>
+            </section>
     
             <!-- Línea divisoria y Derechos reservados -->
             <hr class="border-light">
-            <div class="text-center">
+            <article class="text-center">
                 <p class="mb-0">&copy; 2024 DracoNet. Todos los derechos reservados.</p>
-            </div>
-        </div>
+            </article>
+        </section>
     </footer>
     
 
