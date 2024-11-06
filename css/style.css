@@ -44,7 +44,7 @@
   height: 300px;
   width: auto;
 }
-.main .main__caja2 { /*segtunda caja para el hero */
+.main .main__caja2 { /*segunda caja para el hero */
   max-width: 50%;
   text-align: center;
   justify-items: center;
@@ -149,7 +149,7 @@
   }
   #main__nosotros { /*estilos hero para portafolio*/
     max-width: auto;
-    height: 1100px;
+    height: 1600px;
     background-size: cover;
     background-attachment: fixed;
   }
@@ -330,13 +330,13 @@
     justify-content: center;
     height: auto;
   }
-  #redes {
+  #footer #redes {
     display: flex;
     color: white;
     align-items: center;
     gap: 20px;
   }
-  #telefono, #ubicacion { /*diseño footer*/
+  #footer #telefono, #footer #ubicacion { /*diseño footer*/
     display: flex;
     color: white;
     align-items: center;
